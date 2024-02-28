@@ -4,7 +4,6 @@ import {
   Bridge,
   bootstrap,
   themeDark,
-  themeLight,
   ThemeProvider,
   createWagmiProvider,
 } from "@layerzerolabs/x-trader-joe-bridge";
@@ -32,7 +31,7 @@ const App = () => {
   return (
     <Layout>
       <EthereumAdapterProvider>
-        <ThemeProvider theme={themeLight}>
+        <ThemeProvider theme={themeDark}>
           <Bridge />
         </ThemeProvider>
       </EthereumAdapterProvider>
@@ -48,7 +47,7 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         minHeight: "100vh",
         minWidth: "100vw",
         justifyContent: "center",
-        background: "#F0F0FF",
+        background: "#181824",
       }}
     >
       {children}
