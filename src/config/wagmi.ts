@@ -1,15 +1,14 @@
 import { getDefaultWallets } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient } from "wagmi";
-import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import { avalanche, arbitrum, bsc } from "@wagmi/core/chains";
+import { fantom, arbitrum, optimism, bsc, avalanche, mainnet } from "@wagmi/core/chains";
 
 import { createWagmiAdapter } from "@layerzerolabs/x-trader-joe-bridge";
 
 const { chains: wagmiChains, provider } = configureChains(
   // provide wagmi chain configuration
-  [avalanche, bsc, arbitrum],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID! }), publicProvider()]
+  [fantom, optimism, arbitrum, bsc, avalanche, mainnet],
+  [publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({

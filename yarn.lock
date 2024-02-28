@@ -2030,7 +2030,7 @@
     "@json-rpc-tools/types" "^1.7.6"
     "@pedrouid/environment" "^1.0.1"
 
-"@layerzerolabs/lz-sdk@~0.0.10":
+"@layerzerolabs/lz-sdk@0.0.10", "@layerzerolabs/lz-sdk@~0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@layerzerolabs/lz-sdk/-/lz-sdk-0.0.10.tgz#e55c3c2889f79446829f1232002364ad29b8b2d9"
   integrity sha512-5me1VGRX+BV1sJkToTsKdndatUPbIl6qIsHJS39ytkRCdWHdU+8xv9fSfEdtunKDijnMWYy9OQnefQOdv6joJQ==
