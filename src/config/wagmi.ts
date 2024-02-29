@@ -5,10 +5,10 @@ import { fantom, arbitrum, optimism, bsc, avalanche, mainnet } from "@wagmi/core
 
 import { createWagmiAdapter } from "@layerzerolabs/x-trader-joe-bridge";
 
-const base = {
+const BASE = {
   id: 8453,
   name: "Base Chain",
-  network: "base",
+  network: "BASE",
   nativeCurrency: {
     name: "Ethereum", 
     symbol: "ETH", 
@@ -16,7 +16,7 @@ const base = {
   },
   rpcUrls: {
     default: {
-      http: ["https://base.llamarpc.com	"] 
+      http: ["https://base.llamarpc.com"] 
     }
   },
   blockExplorers: {
@@ -26,35 +26,31 @@ const base = {
     }
   }
 };
-
-/*
-const mainnet = {
-  id: 1,
-  name: "Ethereum",
-  network: "mainnet",
+const METIS = {
+  id: 1088,
+  name: "Metis",
+  network: "METIS",
   nativeCurrency: {
-    name: "Ethereum", 
-    symbol: "ETH", 
+    name: "Metis", 
+    symbol: "METIS", 
     decimals: 18 
   },
   rpcUrls: {
     default: {
-      http: ["https://eth.llamarpc.com"] 
+      http: ["https://metis-pokt.nodies.app"] 
     }
   },
   blockExplorers: {
     default: {
-      name: "Base Explorer",
-      url: "https://etherscan.org/"
+      name: "Metis Explorer",
+      url: "https://explorer.metis.io/"
     }
   }
 };
-*/
-
 
 const { chains: wagmiChains, provider } = configureChains(
   // provide wagmi chain configuration
-  [fantom, optimism, arbitrum, bsc, avalanche, mainnet, base],
+  [fantom, optimism, arbitrum, bsc, avalanche, mainnet, BASE, METIS],
   [publicProvider()]
 );
 

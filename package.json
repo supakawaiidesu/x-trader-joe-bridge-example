@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@layerzerolabs/lz-sdk": "0.0.10",
-    "@layerzerolabs/x-trader-joe-bridge": "^0.0.1-canary.7",
+    "@layerzerolabs/lz-sdk": "0.0.11",
+    "@layerzerolabs/x-trader-joe-bridge": "0.0.4",
     "@rainbow-me/rainbowkit": "^0.8.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",

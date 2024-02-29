@@ -2030,22 +2030,27 @@
     "@json-rpc-tools/types" "^1.7.6"
     "@pedrouid/environment" "^1.0.1"
 
-"@layerzerolabs/lz-sdk@0.0.10", "@layerzerolabs/lz-sdk@~0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@layerzerolabs/lz-sdk/-/lz-sdk-0.0.10.tgz#e55c3c2889f79446829f1232002364ad29b8b2d9"
-  integrity sha512-5me1VGRX+BV1sJkToTsKdndatUPbIl6qIsHJS39ytkRCdWHdU+8xv9fSfEdtunKDijnMWYy9OQnefQOdv6joJQ==
+"@layerzerolabs/lz-sdk@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@layerzerolabs/lz-sdk/-/lz-sdk-0.0.11.tgz#357ae1540f32f1fbfa7e0c674f0c3b03ef120772"
+  integrity sha512-AlObRzSf75jijbh4BZ5vHH1nURbf8iXqQzRRcDwrDocu7ioe3jJ3eDqomzAJAdDLfKH6PHlHnQd/Bu28PssIyw==
 
-"@layerzerolabs/x-trader-joe-bridge@^0.0.1-canary.7":
-  version "0.0.1-canary.7"
-  resolved "https://registry.yarnpkg.com/@layerzerolabs/x-trader-joe-bridge/-/x-trader-joe-bridge-0.0.1-canary.7.tgz#3ed03f4431396391798803aceb0ba707870e0295"
-  integrity sha512-ut6YmGnqP9beZ+/Oyvksi9VdXZ4LYiG+6w8p7Xe5vWhLu4XZF6pAdqwxcAqtnv6aQxojN8FGKQcSg821pMANGg==
+"@layerzerolabs/lz-sdk@0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@layerzerolabs/lz-sdk/-/lz-sdk-0.0.34.tgz#8c178b4e53d80a5de5db0dfa9fc49e925060427c"
+  integrity sha512-BpKFgnPN7ejFtRX7y8r06HYsDtZ+FufVuPjc0Sw/b5VDtkf7Nisn1y2+p0c1hybNZr/vPTgGyyX1YrE6wsICzA==
+
+"@layerzerolabs/x-trader-joe-bridge@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@layerzerolabs/x-trader-joe-bridge/-/x-trader-joe-bridge-0.0.4.tgz#a41601955f3e88823e2bca0a9c39176d4cdd9088"
+  integrity sha512-01CusoQw+ZI56cdES4p0SYYlz1wmJVU3hTm7m5Sc5SswFPEIwMBH15l0hpOyp+geusrVirbEIqh0+7B498AsAA==
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.9.3"
     "@ethersproject/abstract-provider" "^5.7.0"
     "@ethersproject/providers" "^5.7.2"
     "@headlessui/react" "^1.6.5"
-    "@layerzerolabs/lz-sdk" "~0.0.10"
+    "@layerzerolabs/lz-sdk" "0.0.34"
     "@mui/system" "^5.11.5"
     "@radix-ui/react-dialog" "^1.0.2"
     axios "^0.27.2"
