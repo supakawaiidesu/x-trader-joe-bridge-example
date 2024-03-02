@@ -18,14 +18,10 @@ import "@rainbow-me/rainbowkit/styles.css";
 import "react-toastify/dist/ReactToastify.css";
 import { WagmiConfig } from "wagmi";
 
-// boostrap the bridge
-bootstrap(mainnet, {
-  evm: wagmi.wagmiAdapter,
-});
+// Bootstrap the bridge
+bootstrap(mainnet as any, { evm: wagmi.wagmiAdapter });
 
-const EthereumAdapterProvider = createWagmiProvider(
-  wagmi
-) as React.FC<React.PropsWithChildren>;
+const EthereumAdapterProvider = createWagmiProvider(wagmi) as React.FC<React.PropsWithChildren>;
 
 const App = () => {
   return (
@@ -55,21 +51,14 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   );
 };
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
-// don't use strict mode with rainbowkit
-// see: https://github.com/rainbow-me/rainbowkit/issues/836
+// Don't use strict mode with RainbowKit (based on the noted issue)
 root.render(
   <>
-    {/* use your own rainbow kit provider */}
-    <WagmiConfig client={wagmi.wagmiClient as any}>
-      <RainbowKitProvider chains={wagmi.wagmiChains}>
-        {/* you use connect button from rainbowkit */}
+    <WagmiConfig config={wagmi.wagmiClient}>
+      <RainbowKitProvider chains={wagmi.chains}>
         <ConnectButton />
-
-        {/* bridge will use existing integration */}
         <App />
       </RainbowKitProvider>
     </WagmiConfig>
